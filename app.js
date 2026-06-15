@@ -21,6 +21,15 @@
     if (el && value) el.setAttribute("href", value);
   }
 
+  function resolveAssetUrl(value) {
+    const url = String(value || "");
+    if (!url || /^(https?:|data:|blob:|mailto:)/i.test(url)) return url;
+    if (!url.startsWith("/")) return url;
+    const parts = window.location.pathname.split("/").filter(Boolean);
+    const base = parts.length ? `/${parts[0]}` : "";
+    return `${base}${url}`;
+  }
+
   function renderHeroTitle(value) {
     const heading = document.querySelector("h1");
     if (!heading || !value) return;
@@ -95,8 +104,8 @@
     video.removeAttribute("src");
     video.load();
     if (project.videoUrl) {
-      video.src = project.videoUrl;
-      video.poster = project.cover || "";
+      video.src = resolveAssetUrl(project.videoUrl);
+      video.poster = resolveAssetUrl(project.cover) || "";
       video.classList.remove("hidden");
       empty.classList.add("hidden");
     } else {
@@ -122,7 +131,7 @@
   }
 
   function projectCard(project, index) {
-    const cover = project.cover || "https://lh3.googleusercontent.com/aida-public/AB6AXuAbPvquxq4hS9eB2s4PaluuzqyWH9YsBLRc4H851AM1ZI50L_FY-bqx-7pN_WnMk2roi1BAGM_Nz7ylIRpRrBRBqqojJqfnKCZygEw58JL42SMlygBAHVlnraplMC26jVxzod9kK-DDnhCGWAoXD_gcDS8ZNwolKq1RRuk-OUkB6q4bRwt4Gm5j9zyxdiOi7C1k2znyCHfvNwxp4tcaog1_KT0Qk2dk1_cCH91xB9w54FgyP5-MfWjFw245BSC-82mh0F7EbOswQg";
+    const cover = resolveAssetUrl(project.cover) || "https://lh3.googleusercontent.com/aida-public/AB6AXuAbPvquxq4hS9eB2s4PaluuzqyWH9YsBLRc4H851AM1ZI50L_FY-bqx-7pN_WnMk2roi1BAGM_Nz7ylIRpRrBRBqqojJqfnKCZygEw58JL42SMlygBAHVlnraplMC26jVxzod9kK-DDnhCGWAoXD_gcDS8ZNwolKq1RRuk-OUkB6q4bRwt4Gm5j9zyxdiOi7C1k2znyCHfvNwxp4tcaog1_KT0Qk2dk1_cCH91xB9w54FgyP5-MfWjFw245BSC-82mh0F7EbOswQg";
     const category = escapeHtml(project.category || "作品");
     const title = escapeHtml(project.title || "未命名作品");
     const camera = escapeHtml(project.camera || "");
@@ -150,7 +159,7 @@
     return `
       <div class="group relative">
         <div class="aspect-[3/4] overflow-hidden border border-white/10 shadow-2xl transition-all duration-500 group-hover:border-tertiary">
-          <img alt="${escapeHtml(item.label || "拍摄花絮")}" class="bts-parallax h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" src="${escapeHtml(item.image || "")}"/>
+          <img alt="${escapeHtml(item.label || "拍摄花絮")}" class="bts-parallax h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" src="${escapeHtml(resolveAssetUrl(item.image) || "")}"/>
           <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
             <p class="font-technical-sm text-[10px] uppercase tracking-widest text-tertiary">${escapeHtml(item.label || "")}</p>
           </div>
@@ -209,7 +218,7 @@
               ${brands.map(brand => `
                 <article class="flex min-h-[132px] flex-col items-center justify-center gap-4 bg-background/80 p-5 text-center transition-colors duration-300 hover:bg-surface-container-lowest">
                   <div class="relative flex h-16 w-full max-w-[150px] items-center justify-center px-2 py-2 text-xs font-bold text-tertiary">
-                    ${brand.logo ? `<img class="relative z-10 max-h-full max-w-full object-contain" alt="${escapeHtml(brand.name || "品牌")} logo" src="${escapeHtml(brand.logo)}" onload="this.nextElementSibling.style.display='none';" onerror="this.style.display='none';">` : ""}
+                    ${brand.logo ? `<img class="relative z-10 max-h-full max-w-full object-contain" alt="${escapeHtml(brand.name || "品牌")} logo" src="${escapeHtml(resolveAssetUrl(brand.logo))}" onload="this.nextElementSibling.style.display='none';" onerror="this.style.display='none';">` : ""}
                     <span class="brand-fallback flex items-center justify-center text-center leading-4">${escapeHtml(brand.shortName || (brand.name || "").slice(0, 2))}</span>
                   </div>
                   <p class="font-technical-sm text-[10px] leading-4 text-on-surface-variant">${escapeHtml(brand.name || "")}</p>
@@ -287,7 +296,7 @@
 
   try {
     createPlayerModal();
-    const response = await fetch("/data/site.json", { cache: "no-store" });
+    const response = await fetch("data/site.json", { cache: "no-store" });
     if (!response.ok) return;
     const site = await response.json();
     const profile = site.profile || {};

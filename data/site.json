@@ -45,7 +45,7 @@
       "description": "",
       "camera": "",
       "cover": "/assets/uploads/1781443786796-2026-06-06-234237_1.8.1.jpg",
-      "videoUrl": "https://github.com/lijice77/portfolio-homepage/releases/download/videos-v1/1781443794709-image.mp4",
+      "videoUrl": "/assets/uploads/1781443794709-image-web.mp4",
       "featured": true
     },
     {
@@ -66,7 +66,7 @@
       "camera": "",
       "cover": "/assets/uploads/1781443239574-2026-06-06-234237_1.5.1.jpg",
       "featured": true,
-      "videoUrl": "/assets/uploads/1781443276135-kn.mp4"
+      "videoUrl": "/assets/uploads/1781443276135-kn-h264.mp4"
     },
     {
       "id": "b70-launch-live",
@@ -76,7 +76,7 @@
       "camera": "",
       "cover": "/assets/uploads/1781443708036-2026-06-06-234237_1.1.1.jpg",
       "featured": true,
-      "videoUrl": "https://github.com/lijice77/portfolio-homepage/releases/download/videos-v1/1781443714388-image.mp4"
+      "videoUrl": "/assets/uploads/1781443714388-image-web.mp4"
     }
   ],
   "bts": {

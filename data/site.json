@@ -1,0 +1,289 @@
+{
+  "profile": {
+    "brandName": "刘家成-个人作品集主页",
+    "heroTitle": "光影创造",
+    "name": "刘家成",
+    "location": "广西南宁",
+    "contactEmail": "lijice77@126.com",
+    "wechat": "Lijice0422",
+    "copyright": "© 2026 刘家成作品集。保留所有权利。",
+    "socials": {
+      "imdb": "https://www.imdb.com/find/?q=%E5%88%98%E5%AE%B6%E6%88%90&s=nm",
+      "vimeo": "https://vimeo.com/search?q=%E5%88%98%E5%AE%B6%E6%88%90",
+      "instagram": "https://www.instagram.com/"
+    }
+  },
+  "about": {
+    "title": "关于我",
+    "body": "具备广告片、品牌直播、新媒体内容项目执行经验，服务或参与华为、一汽红旗、一汽奔腾、霸王茶姬、蚂蚁公益基金会等品牌项目。熟悉从客户需求沟通、报价排期、拍摄筹备、现场协调到内容交付的完整流程，兼具内容理解、制作执行和客户沟通能力，目标发展方向为广告客户执行 / AE。"
+  },
+  "projects": [
+    {
+      "id": "project-1781444142777",
+      "title": "一汽奔腾-悦意03车友会宣传篇",
+      "category": "商业广告",
+      "description": "",
+      "camera": "",
+      "cover": "/assets/uploads/1781444149056-2026-06-06-234237_1.2.1.jpg",
+      "videoUrl": "",
+      "featured": true
+    },
+    {
+      "id": "project-1781444105449",
+      "title": "奇瑞QQ3-设计篇",
+      "category": "商业广告",
+      "description": "",
+      "camera": "",
+      "cover": "/assets/uploads/1781444109162-2026-06-06-234237_1.3.1.jpg",
+      "videoUrl": "/assets/uploads/1781444113270-kn.mp4",
+      "featured": true
+    },
+    {
+      "id": "project-1781443773933",
+      "title": "美团乡村操场-广西巴马",
+      "category": "公益广告",
+      "description": "",
+      "camera": "",
+      "cover": "/assets/uploads/1781443786796-2026-06-06-234237_1.8.1.jpg",
+      "videoUrl": "/assets/uploads/1781443794709-image.mp4",
+      "featured": true
+    },
+    {
+      "id": "night-echo",
+      "title": "长春万象城冬日影像",
+      "category": "商业广告",
+      "description": "城市商业空间影像项目，突出冬日氛围、人物情绪与品牌质感。",
+      "camera": "",
+      "cover": "/assets/uploads/1781438554850-2026-06-06-234237_1.6.1.jpg",
+      "featured": true,
+      "videoUrl": "/assets/uploads/1781438550216-image.mp4"
+    },
+    {
+      "id": "tiandong-has-treasures",
+      "title": "华为x每日人物-阳东霖《色彩创作哲学》",
+      "category": "商业广告",
+      "description": "",
+      "camera": "",
+      "cover": "/assets/uploads/1781443239574-2026-06-06-234237_1.5.1.jpg",
+      "featured": true,
+      "videoUrl": "/assets/uploads/1781443276135-kn.mp4"
+    },
+    {
+      "id": "b70-launch-live",
+      "title": "长春万科-向日葵小镇《试住体验官的一天》",
+      "category": "商业广告",
+      "description": "",
+      "camera": "",
+      "cover": "/assets/uploads/1781443708036-2026-06-06-234237_1.1.1.jpg",
+      "featured": true,
+      "videoUrl": "/assets/uploads/1781443714388-image.mp4"
+    }
+  ],
+  "bts": {
+    "title": "拍摄花絮",
+    "items": [
+      {
+        "label": "新花絮",
+        "image": "/assets/uploads/1781444619792-7bef782706a6aac6b6bcb7fe626f9be4.jpg"
+      },
+      {
+        "label": "新花絮",
+        "image": "/assets/uploads/1781444608480-a4a0086d3b31d08448b312161d576e21.jpg"
+      },
+      {
+        "label": "新花絮",
+        "image": "/assets/uploads/1781444583996-3191497dfee430847a8d479f39712be6.jpg"
+      },
+      {
+        "label": "新花絮",
+        "image": "/assets/uploads/1781444443682-0aa3de7f0a1caf2fac8ccdffb34866ea.jpg"
+      },
+      {
+        "label": "新花絮",
+        "image": "/assets/uploads/1781444431808-8cd627f0d7adef10f2811852a3ef1c3b.jpg"
+      },
+      {
+        "label": "新花絮",
+        "image": "/assets/uploads/1781444415574-6cabf55549effaa99c39bc67fa3ac40a.jpg"
+      },
+      {
+        "label": "Portrait / Lead",
+        "image": "/assets/uploads/1781444356287-414a573b0ec044d4b7fcf8784d5d3bd7.jpg"
+      },
+      {
+        "label": "On Set / Lighting",
+        "image": "/assets/uploads/1781444371769-a0e5c8f7bc5ef72d624511294d75abf2.jpg"
+      },
+      {
+        "label": "Camera / Operation",
+        "image": "/assets/uploads/1781444382850-d8f77715433586c08c72888f9faa18cd.jpg"
+      }
+    ]
+  },
+  "experiences": [
+    {
+      "period": "2025.03 - 至今",
+      "title": "吉林橘子文化传媒有限公司 / 广告项目执行 / 合作摄影师 ",
+      "description": "服务4A广告公司及头部品牌，负责创意沟通、拍摄方案准备、器材与人员配置、掌机拍摄、多机位协作和画面质量把控。参与一汽奔腾、一汽红旗、华为、奇瑞、蚂蚁公益基金会、美团公益、万科地产、长春万象城等品牌项目。"
+    },
+    {
+      "period": "2024.07 - 2025.10",
+      "title": "广西尚瞳影视器材租赁有限公司 / 客户执行",
+      "description": "负责客户拓展、器材报价、档期协调、物流统筹、片场驻场执行与外援调度，并在多个项目中兼任摄影组大助理，负责焦点控制和素材管理，保障现场拍摄和素材交付稳定推进。"
+    },
+    {
+      "period": "2023.06 - 2024.03",
+      "title": "广西聚惠天下有限公司 / 新媒体运营实习生",
+      "description": "负责多行业品牌的新媒体内容制作与账号运维，参与选题、脚本、拍摄、剪辑、数据分析和内容策略调整。参与伊岭岩账号冷启动，6个月粉丝从5000增长至3万+，并参与南宁青秀山、伊岭岩景区团购推广内容执行。"
+    }
+  ],
+  "awards": [
+    {
+      "title": "服务头部品牌与4A项目",
+      "description": "参与一汽奔腾、一汽红旗、华为、奇瑞、蚂蚁公益基金会、美团公益、万科地产等商业影像项目。"
+    },
+    {
+      "title": "账号增长与内容转化",
+      "description": "参与伊岭岩账号冷启动与景区团购内容制作，协助完成从内容曝光到销售转化的闭环。"
+    },
+    {
+      "title": "现场执行与素材交付",
+      "description": "具备器材、人员、物流、焦点控制和素材管理经验，能在片场快速处理突发问题并保障交付。"
+    }
+  ],
+  "serviceBrands": [
+    {
+      "name": "一汽红旗",
+      "shortName": "红旗",
+      "logo": "/assets/brands/hongqi.png"
+    },
+    {
+      "name": "华为",
+      "shortName": "华为",
+      "logo": "/assets/brands/huawei.svg"
+    },
+    {
+      "name": "奇瑞",
+      "shortName": "奇瑞",
+      "logo": "/assets/brands/chery-logo.svg"
+    },
+    {
+      "name": "蚂蚁公益基金会",
+      "shortName": "蚂蚁",
+      "logo": "/assets/brands/antgroup.svg"
+    },
+    {
+      "name": "美团公益",
+      "shortName": "美团",
+      "logo": "/assets/brands/meituan.svg"
+    },
+    {
+      "name": "南方电网",
+      "shortName": "南网",
+      "logo": "/assets/brands/cspg-logo.png"
+    },
+    {
+      "name": "Keep",
+      "shortName": "Keep",
+      "logo": "/assets/brands/keep-logo.png"
+    },
+    {
+      "name": "CCTV",
+      "shortName": "CCTV",
+      "logo": "/assets/brands/cctv-logo.svg"
+    }
+  ],
+  "projectExperience": [
+    {
+      "name": "蚂蚁金融公益基金会《田东有宝》广告片",
+      "role": "摄影组组长",
+      "description": "根据导演意图制定设备方案并组织现场拍摄，统筹摄影组执行节奏，确保广告片拍摄顺利完成。"
+    },
+    {
+      "name": "一汽奔腾23款B70上市发布会直播（西安）",
+      "role": "3号机位摄影师",
+      "description": "完成发布会全流程拍摄，与多机位团队协作保障直播画面流畅稳定，配合现场节奏完成交付。"
+    },
+    {
+      "name": "红果短剧《山海大学 我的喵喵喵男友》",
+      "role": "B机摄影师",
+      "description": "根据剧本调性和导演需求完成B机拍摄任务，为后期剪辑提供丰富且连续的画面素材。"
+    },
+    {
+      "name": "华为手机 ×《每日人物》合作广告片",
+      "role": "B机摄影师",
+      "description": "围绕品牌调性把控画面质感，完成分配拍摄任务，并配合主机位补充人物与环境细节。"
+    },
+    {
+      "name": "霸王茶姬季度品牌直播（三亚）",
+      "role": "客户执行 / 摄影组组长",
+      "description": "负责片场协调、设备保障和现场问题处理，统筹摄影组执行，确保直播流程顺畅推进。"
+    },
+    {
+      "name": "奇瑞新款QQ3广告-设计篇",
+      "role": "A机摄影师",
+      "description": "完成A机核心画面拍摄，并配合B机位进行多角度覆盖，保障素材完整度和可用性。"
+    },
+    {
+      "name": "中国高等教育培训中心-心理培训工作培训班",
+      "role": "内容执行",
+      "description": "负责短视频内容制作与现场素材整理，围绕培训主题完成适合传播的内容交付。"
+    },
+    {
+      "name": "图虫网 AI 训练数据采集",
+      "role": "客户执行",
+      "description": "安排摄影师完成AI训练数据拍摄，并优化素材分类流程，提升采集、整理与交付效率。"
+    }
+  ],
+  "skills": [
+    {
+      "title": "内容策划",
+      "icon": "edit_note",
+      "items": [
+        "新媒体内容策略",
+        "分镜头脚本撰写",
+        "创意提案",
+        "拍摄方案设计"
+      ]
+    },
+    {
+      "title": "拍摄制作",
+      "icon": "videocam",
+      "items": [
+        "电影摄影技术",
+        "灯光基础",
+        "多机位直播执行",
+        "AI影像制作"
+      ]
+    },
+    {
+      "title": "后期软件",
+      "icon": "palette",
+      "items": [
+        "Premiere",
+        "剪映",
+        "达芬奇基础操作"
+      ]
+    },
+    {
+      "title": "AI工作流提效",
+      "icon": "auto_awesome",
+      "items": [
+        "Codex",
+        "Claude Code",
+        "AI编程工具辅助",
+        "AI影像制作"
+      ]
+    },
+    {
+      "title": "项目协调",
+      "icon": "hub",
+      "items": [
+        "客户需求对接",
+        "报价与排期管理",
+        "跨部门沟通",
+        "片场调度"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>作品集后台管理</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">Portfolio CMS</p>
+      <h1>作品集后台管理</h1>
+    </div>
+    <div class="actions">
+      <a class="ghost" href="/" target="_blank">打开主页</a>
+      <button id="saveBtn">保存全部</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="panel">
+      <h2>基础信息</h2>
+      <div class="grid two">
+        <label>主页名称<input id="brandName"></label>
+        <label>首页大标题<input id="heroTitle"></label>
+        <label>姓名<input id="name"></label>
+        <label>所在地<input id="location"></label>
+        <label>联系邮箱<input id="contactEmail" type="email"></label>
+        <label>微信<input id="wechat"></label>
+        <label>版权文字<input id="copyright"></label>
+        <label>IMDb 链接<input id="imdb"></label>
+        <label>Vimeo 链接<input id="vimeo"></label>
+        <label>Instagram 链接<input id="instagram"></label>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>关于我</h2>
+      <label>标题<input id="aboutTitle"></label>
+      <label>介绍<textarea id="aboutBody" rows="5"></textarea></label>
+    </section>
+
+    <section class="panel">
+      <div class="section-title">
+        <h2>拍摄花絮</h2>
+        <button id="addBts" type="button">新增花絮</button>
+      </div>
+      <label>区块标题<input id="btsTitle"></label>
+      <div id="btsItems" class="projects compact"></div>
+    </section>
+
+    <section class="panel">
+      <div class="section-title">
+        <h2>作品管理</h2>
+        <button id="addProject" type="button">新增作品</button>
+      </div>
+      <div id="projects" class="projects"></div>
+    </section>
+
+    <section class="panel">
+      <div class="section-title">
+        <h2>经历管理</h2>
+        <button id="addExperience" type="button">新增经历</button>
+      </div>
+      <div id="experiences" class="projects compact"></div>
+    </section>
+
+    <section class="panel">
+      <div class="section-title">
+        <h2>荣誉管理</h2>
+        <button id="addAward" type="button">新增荣誉</button>
+      </div>
+      <div id="awardsList" class="projects compact"></div>
+    </section>
+
+    <section class="panel">
+      <div class="section-title">
+        <h2>项目经验管理</h2>
+        <button id="addProjectExperience" type="button">新增项目经验</button>
+      </div>
+      <div id="projectExperienceList" class="projects compact"></div>
+    </section>
+
+    <section class="panel">
+      <div class="section-title">
+        <h2>技能管理</h2>
+        <button id="addSkill" type="button">新增技能组</button>
+      </div>
+      <div id="skillsList" class="projects compact"></div>
+    </section>
+  </main>
+
+  <div id="toast" role="status"></div>
+  <script src="admin.js"></script>
+</body>
+</html>

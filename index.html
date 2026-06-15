@@ -1,0 +1,579 @@
+﻿<!DOCTYPE html>
+
+<html class="dark" lang="zh"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>导演 / 摄影指导 - 摄影作品集</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Geist:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-error": "#690005",
+                      "surface-bright": "#38393d",
+                      "on-surface": "#e3e2e7",
+                      "surface-variant": "#343539",
+                      "surface-container-low": "#1a1b1f",
+                      "on-secondary": "#313030",
+                      "surface-container-high": "#292a2e",
+                      "on-tertiary-fixed-variant": "#5d4201",
+                      "on-tertiary": "#412d00",
+                      "on-tertiary-fixed": "#261900",
+                      "background": "#121317",
+                      "surface": "#121317",
+                      "primary-fixed": "#e2e2e2",
+                      "on-primary-container": "#757575",
+                      "on-primary": "#303030",
+                      "inverse-surface": "#e3e2e7",
+                      "on-background": "#e3e2e7",
+                      "secondary-container": "#4a4949",
+                      "tertiary": "#e9c176",
+                      "error": "#ffb4ab",
+                      "surface-container-highest": "#343539",
+                      "secondary-fixed-dim": "#c8c6c5",
+                      "error-container": "#93000a",
+                      "surface-tint": "#c6c6c6",
+                      "surface-dim": "#121317",
+                      "on-primary-fixed": "#1b1b1b",
+                      "secondary": "#c8c6c5",
+                      "primary": "#c6c6c6",
+                      "on-error-container": "#ffdad6",
+                      "surface-container": "#1e1f23",
+                      "on-secondary-fixed": "#1c1b1b",
+                      "tertiary-fixed-dim": "#e9c176",
+                      "outline": "#988e90",
+                      "on-secondary-fixed-variant": "#474646",
+                      "inverse-on-surface": "#2f3034",
+                      "tertiary-container": "#000000",
+                      "inverse-primary": "#5e5e5e",
+                      "primary-fixed-dim": "#c6c6c6",
+                      "on-secondary-container": "#bab8b7",
+                      "on-tertiary-container": "#91702e",
+                      "secondary-fixed": "#e5e2e1",
+                      "surface-container-lowest": "#0d0e12",
+                      "on-surface-variant": "#cfc4c5",
+                      "tertiary-fixed": "#ffdea5",
+                      "outline-variant": "#4c4546",
+                      "primary-container": "#000000",
+                      "on-primary-fixed-variant": "#474747"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "container-max": "1440px",
+                      "margin-mobile": "20px",
+                      "gutter": "24px",
+                      "margin-desktop": "64px",
+                      "unit": "8px"
+              },
+              "fontFamily": {
+                      "headline-lg-mobile": [
+                              "Bebas Neue"
+                      ],
+                      "headline-lg": [
+                              "Bebas Neue"
+                      ],
+                      "display-lg": [
+                              "Bebas Neue"
+                      ],
+                      "technical-sm": [
+                              "Geist"
+                      ],
+                      "body-md": [
+                              "Geist"
+                      ],
+                      "headline-md": [
+                              "Bebas Neue"
+                      ],
+                      "body-lg": [
+                              "Geist"
+                      ]
+              },
+              "fontSize": {
+                      "headline-lg-mobile": [
+                              "48px",
+                              {
+                                      "lineHeight": "48px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "64px",
+                              {
+                                      "lineHeight": "64px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-lg": [
+                              "120px",
+                              {
+                                      "lineHeight": "110px",
+                                      "letterSpacing": "0.02em",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "technical-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "32px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+            }
+          },
+        }
+    </script>
+<style>
+        html {
+            scroll-behavior: smooth;
+        }
+        html, body {
+            min-height: 100%;
+        }
+        body {
+            background-color: #000000; /* Deepest black for cinematic feel */
+            color: #e3e2e7;
+            overflow-x: hidden;
+        }
+        .site-backdrop {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+            overflow: hidden;
+            background: #050506;
+        }
+        .site-backdrop img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.24;
+            filter: grayscale(1) contrast(1.18) brightness(0.62) blur(2px);
+            transform: scale(1.04);
+            mix-blend-mode: luminosity;
+        }
+        .site-backdrop::before,
+        .site-backdrop::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+        }
+        .site-backdrop::before {
+            background:
+                radial-gradient(circle at 72% 12%, rgba(233, 193, 118, 0.12), transparent 32%),
+                linear-gradient(180deg, rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.84) 72%, rgba(0, 0, 0, 0.96));
+        }
+        .site-backdrop::after {
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.74), transparent 38%, rgba(0, 0, 0, 0.62));
+        }
+        nav, main, footer {
+            position: relative;
+        }
+        .mobile-contact-fixed {
+            position: fixed;
+            top: 16px;
+            right: 18px;
+            z-index: 10001;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 48px;
+            min-height: 34px;
+            border: 1px solid rgba(233, 193, 118, 0.7);
+            background: rgba(0, 0, 0, 0.5);
+            color: #e9c176;
+            font-family: "Geist", sans-serif;
+            font-size: 10px;
+            letter-spacing: 0.14em;
+            text-decoration: none;
+            backdrop-filter: blur(10px);
+        }
+        @media (min-width: 768px) {
+            .mobile-contact-fixed {
+                display: none;
+            }
+        }
+        main, footer {
+            z-index: 1;
+        }
+        main > section:first-child {
+            min-height: 100vh;
+        }
+        nav .font-headline-md {
+            font-size: clamp(18px, 4.8vw, 32px);
+            line-height: 1;
+            max-width: calc(100vw - 92px);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        main > section:first-child > .relative.z-10 {
+            width: 100%;
+            margin-top: clamp(48px, 10vh, 96px);
+        }
+        main h1.font-display-lg {
+            width: 100%;
+            max-width: min(1120px, calc(100vw - 32px));
+            font-size: clamp(58px, 16vw, 140px) !important;
+            line-height: 0.9 !important;
+            letter-spacing: 0 !important;
+            overflow-wrap: anywhere;
+            word-break: keep-all;
+        }
+        main section:first-child p.font-technical-sm {
+            max-width: calc(100vw - 48px);
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.7;
+        }
+        #about,
+        #showreel,
+        #awards,
+        #project-experience,
+        #skills,
+        #bts,
+        #contact {
+            background: linear-gradient(180deg, rgba(8, 9, 12, 0.78), rgba(8, 9, 12, 0.9)) !important;
+            border-top: 1px solid rgba(233, 193, 118, 0.12);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+        }
+        #showreel {
+            background: linear-gradient(180deg, rgba(5, 6, 8, 0.7), rgba(8, 9, 12, 0.88)) !important;
+        }
+        #bts {
+            background: linear-gradient(180deg, rgba(8, 9, 12, 0.84), rgba(5, 6, 8, 0.9)) !important;
+        }
+        img {
+            max-width: 100%;
+        }
+        .grain-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0.05;
+        }
+        .aspect-anamorphic {
+            aspect-ratio: 2.39 / 1;
+        }
+        .text-glow-subtle {
+            text-shadow: 0 0 20px rgba(233, 193, 118, 0.1);
+        }
+        .hover-scale-img:hover img {
+            transform: scale(1.05);
+        }
+        
+        /* New Animations & Interactions */
+        .ambient-light {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100vw; height: 100vh;
+            pointer-events: none;
+            z-index: 10;
+            background: radial-gradient(circle 600px at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(233, 193, 118, 0.04), transparent 40%);
+            transition: opacity 0.3s;
+        }
+        
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Accessibility: Reduced Motion */
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+            .reveal {
+                transition: none;
+                opacity: 1;
+                transform: none;
+            }
+            .ambient-light {
+                display: none;
+            }
+            .hover-scale-img:hover img,
+            .hover-scale-img img {
+                transform: none !important;
+                transition: none !important;
+            }
+            .parallax-bg, .bts-parallax {
+                transform: none !important;
+            }
+        }
+        @media (max-width: 767px) {
+            .font-display-lg {
+                font-size: clamp(52px, 16vw, 70px) !important;
+                line-height: 0.92 !important;
+            }
+            main > section:first-child {
+                min-height: 100svh;
+                padding-top: 84px;
+                padding-bottom: 72px;
+            }
+            main > section:first-child > .relative.z-10 {
+                margin-top: 28px;
+            }
+            main h1.font-display-lg {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                max-width: calc(100vw - 56px);
+                min-height: 1.9em;
+                font-size: clamp(54px, 18vw, 76px) !important;
+                line-height: 0.94 !important;
+                white-space: normal;
+                color: transparent;
+                overflow: visible;
+            }
+            main h1.font-display-lg::before,
+            main h1.font-display-lg::after {
+                display: block;
+                color: #e3e2e7;
+                text-shadow: 0 0 20px rgba(233, 193, 118, 0.1), 0 14px 30px rgba(0, 0, 0, 0.55);
+            }
+            main h1.font-display-lg::before {
+                content: attr(data-mobile-title-a);
+            }
+            main h1.font-display-lg::after {
+                content: attr(data-mobile-title-b);
+            }
+            nav .font-headline-md {
+                font-size: clamp(15px, 4.4vw, 19px);
+                max-width: calc(100vw - 128px);
+            }
+            nav a[aria-label="跳到联系区"] {
+                display: none !important;
+            }
+            .mobile-contact-fixed {
+                display: inline-flex;
+            }
+            nav .material-symbols-outlined {
+                font-size: 24px;
+            }
+            main section:first-child p.font-technical-sm {
+                font-size: 11px;
+                letter-spacing: 0.12em;
+            }
+            .aspect-anamorphic {
+                aspect-ratio: 16 / 10;
+            }
+            footer .px-margin-desktop {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased font-body-md bg-black selection:bg-tertiary selection:text-on-tertiary">
+<div class="site-backdrop" aria-hidden="true">
+<img alt="" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbPvquxq4hS9eB2s4PaluuzqyWH9YsBLRc4H851AM1ZI50L_FY-bqx-7pN_WnMk2roi1BAGM_Nz7ylIRpRrBRBqqojJqfnKCZygEw58JL42SMlygBAHVlnraplMC26jVxzod9kK-DDnhCGWAoXD_gcDS8ZNwolKq1RRuk-OUkB6q4bRwt4Gm5j9zyxdiOi7C1k2znyCHfvNwxp4tcaog1_KT0Qk2dk1_cCH91xB9w54FgyP5-MfWjFw245BSC-82mh0F7EbOswQg"/>
+</div>
+<div class="grain-overlay"></div>
+<a class="mobile-contact-fixed" href="#contact">联系</a>
+<!-- TopNavBar Shared Component -->
+<nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl bg-transparent">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 mx-auto max-w-container-max">
+<div class="font-headline-md text-headline-md tracking-tighter text-primary">导演 / 摄影指导</div>
+<div class="hidden md:flex gap-8">
+<a class="font-technical-sm text-technical-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="#showreel">作品集</a>
+<a class="font-technical-sm text-technical-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="#awards">工作经历</a>
+<a class="font-technical-sm text-technical-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="#about">关于</a>
+<a class="font-technical-sm text-technical-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="#contact">联系</a>
+</div>
+<a aria-label="联系" class="hidden md:flex items-center justify-center text-primary hover:text-tertiary transition-all duration-300" href="#contact">
+<span class="material-symbols-outlined" data-icon="videocam" style='font-variation-settings: "FILL" 1;'>videocam</span>
+</a>
+<!-- Mobile Menu Icon (Simplified for context) -->
+<a aria-label="跳到联系区" class="md:hidden shrink-0 border border-tertiary/60 px-3 py-2 font-technical-sm text-[10px] uppercase tracking-widest text-tertiary" href="#contact">联系</a>
+</div>
+</nav>
+<main>
+<!-- 1. Hero Section -->
+<section class="relative w-full flex items-center justify-center overflow-hidden py-24">
+<div class="absolute inset-0 w-full h-full bg-[#121212]">
+<img alt="Cinematic Hero Still" class="hero-bg-img parallax-bg w-full h-full object-cover opacity-60 mix-blend-luminosity" data-alt="A highly atmospheric, cinematic still shot in a wide anamorphic aspect ratio. The scene depicts a dimly lit, moody urban environment at night with a stark, high-contrast lighting scheme. Deep blacks dominate the shadows, while a single, intense beam of warm spotlight gold cuts through the darkness, illuminating swirling dust motes. The aesthetic evokes a high-end, gritty neo-noir film, emphasizing profound depth and dramatic tension suitable for a premium cinematographer's portfolio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbPvquxq4hS9eB2s4PaluuzqyWH9YsBLRc4H851AM1ZI50L_FY-bqx-7pN_WnMk2roi1BAGM_Nz7ylIRpRrBRBqqojJqfnKCZygEw58JL42SMlygBAHVlnraplMC26jVxzod9kK-DDnhCGWAoXD_gcDS8ZNwolKq1RRuk-OUkB6q4bRwt4Gm5j9zyxdiOi7C1k2znyCHfvNwxp4tcaog1_KT0Qk2dk1_cCH91xB9w54FgyP5-MfWjFw245BSC-82mh0F7EbOswQg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+</div>
+<div class="relative z-10 flex flex-col items-center text-center px-margin-mobile md:px-margin-desktop mt-20 reveal">
+<h1 class="font-display-lg text-display-lg md:text-[140px] text-primary tracking-tighter uppercase mb-6 drop-shadow-2xl text-glow-subtle mix-blend-screen">
+                    塑造光影
+                </h1>
+<p class="font-technical-sm text-technical-sm text-secondary uppercase tracking-[0.2em] mb-12 max-w-2xl">刘家成 —广西南宁</p>
+<div class="mt-20 w-full max-w-4xl mx-auto reveal" id="bts">
+<div class="flex items-center justify-center gap-4 mb-8 opacity-60">
+<div class="h-[1px] w-12 bg-tertiary"></div>
+<span class="font-technical-sm text-technical-sm uppercase tracking-[0.3em] text-tertiary" data-cms="bts-title">拍摄花絮</span>
+<div class="h-[1px] w-12 bg-tertiary"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full" id="bts-grid">
+<!-- Image 1: Portrait (Featured) -->
+<div class="group relative">
+<div class="aspect-[3/4] overflow-hidden border border-white/10 shadow-2xl transition-all duration-500 group-hover:border-tertiary">
+<img alt="Cinematographer Portrait" class="bts-parallax w-full h-full object-cover grayscale contrast-125 transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbPvquxq4hS9eB2s4PaluuzqyWH9YsBLRc4H851AM1ZI50L_FY-bqx-7pN_WnMk2roi1BAGM_Nz7ylIRpRrBRBqqojJqfnKCZygEw58JL42SMlygBAHVlnraplMC26jVxzod9kK-DDnhCGWAoXD_gcDS8ZNwolKq1RRuk-OUkB6q4bRwt4Gm5j9zyxdiOi7C1k2znyCHfvNwxp4tcaog1_KT0Qk2dk1_cCH91xB9w54FgyP5-MfWjFw245BSC-82mh0F7EbOswQg"/>
+<div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<p class="font-technical-sm text-[10px] text-tertiary uppercase tracking-widest">Portrait / Lead</p>
+</div>
+</div>
+</div>
+<!-- Image 2: Studio Lighting -->
+<div class="group relative">
+<div class="aspect-[3/4] overflow-hidden border border-white/10 shadow-2xl transition-all duration-500 group-hover:border-tertiary">
+<img alt="Studio Lighting Action" class="bts-parallax w-full h-full object-cover grayscale contrast-110 transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDotdKGivkWfWsGuN4-Dt17HtwlMsFn-ZXN4k-5XqIjcCYIQ03-pSOSYXfXd2LnxnN8VMgEJ95qT3Lh-4quVTSu46U7kznl6FFo9OQgy8edczKP3BtSFgdJ71S1zcCavls9z4Tta_EjZ-WM2VhSFER_qsvcXoFtFzCgk2OMeio5oo0HPxVhe7msRvy87KejlY-tXYAirVVZe2Uu9MGMg3Rgv5OS8Tww3IQK8o0kBJRvD2oWXMT29VxbgHwCcwqmKEh0tpbRJD88Jg"/>
+<div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<p class="font-technical-sm text-[10px] text-tertiary uppercase tracking-widest">On Set / Lighting</p>
+</div>
+</div>
+</div>
+<!-- Image 3: Camera Operation -->
+<div class="group relative">
+<div class="aspect-[3/4] overflow-hidden border border-white/10 shadow-2xl transition-all duration-500 group-hover:border-tertiary">
+<img alt="Camera Operation" class="bts-parallax w-full h-full object-cover grayscale contrast-100 transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXeBhJQxKqoX7ms7mIz5hTcOeyO3aNDLbOIrF3i8wM8Yi7WVV2zM3dfsNXB1--Uxnc2ZzlvDvsFdChHaHy63b3Jf-NzbKuIrIjH1hp88v-rEoS19VEN8YgINPPcnpOsCcmxEABX1jSgO3T4AB888o_emoK4bJMtJFgfU3S-YD4MMyokx0c5zruM4GtF7Gocsjc7-0PyHgZsburDsFS9n2cc4bxprkgA630C6cOHQTokLv4QRHpU1rLqMXgOK_65U2ztrUDnO88NQ"/>
+<div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<p class="font-technical-sm text-[10px] text-tertiary uppercase tracking-widest">Camera / Operation</p>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+</section>
+<!-- 2. Narrative/About Section -->
+<section class="px-margin-mobile md:px-margin-desktop bg-surface-container-lowest relative z-20 py-24" id="about">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-8 reveal">
+</div>
+</div>
+</section>
+<!-- 3. Showreel Preview Grid -->
+<section class="py-[128px] bg-background" id="showreel">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-16 reveal">
+<h2 class="font-headline-md text-headline-md text-primary uppercase flex items-center gap-4">
+<span class="material-symbols-outlined text-tertiary text-sm" data-icon="lens">lens</span>部分商业作品</h2>
+</div>
+<div class="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 px-4 md:px-8">
+<!-- Grid Item 1 --><div class="relative group overflow-hidden bg-surface-container-high aspect-anamorphic hover-scale-img cursor-pointer reveal border border-transparent hover:border-tertiary/50 hover:shadow-[0_0_30px_rgba(233,193,118,0.15)] transition-all duration-500"><img alt="Neon Cityscape Motion" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXeBhJQxKqoX7ms7mIz5hTcOeyO3aNDLbOIrF3i8wM8Yi7WVV2zM3dfsNXB1--Uxnc2ZzlvDvsFdChHaHy63b3Jf-NzbKuIrIjH1hp88v-rEoS19VEN8YgINPPcnpOsCcmxEABX1jSgO3T4AB888o_emoK4bJMtJFgfU3S-YD4MMyokx0c5zruM4GtF7Gocsjc7-0PyHgZsburDsFS9n2cc4bxprkgA630C6cOHQTokLv4QRHpU1rLqMXgOK_65U2ztrUDnO88NQ"/><div class="absolute inset-0 bg-black/40 group-hover:bg-black/10 transition-colors duration-500 flex items-center justify-center"><span class="material-symbols-outlined text-white text-5xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-lg" style='font-variation-settings: "FILL" 1;'>play_circle</span></div><div class="absolute bottom-4 left-4 right-4 flex justify-between items-end"><div><p class="font-technical-sm text-technical-sm text-white uppercase tracking-widest mb-1">商业广告</p><h3 class="font-headline-md text-[24px] text-primary uppercase">夜想回声</h3></div><div class="border border-surface px-2 py-1 bg-black/50 backdrop-blur-sm"><span class="font-technical-sm text-[10px] text-secondary">ALEXA 35 / COOKE ANAMORPHIC</span></div></div></div>
+<!-- Grid Item 2 --><div class="relative group overflow-hidden bg-surface-container-high aspect-anamorphic hover-scale-img cursor-pointer reveal border border-transparent hover:border-tertiary/50 hover:shadow-[0_0_30px_rgba(233,193,118,0.15)] transition-all duration-500"><img alt="Desolate Landscape Motion" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDotdKGivkWfWsGuN4-Dt17HtwlMsFn-ZXN4k-5XqIjcCYIQ03-pSOSYXfXd2LnxnN8VMgEJ95qT3Lh-4quVTSu46U7kznl6FFo9OQgy8edczKP3BtSFgdJ71S1zcCavls9z4Tta_EjZ-WM2VhSFER_qsvcXoFtFzCgk2OMeio5oo0HPxVhe7msRvy87KejlY-tXYAirVVZe2Uu9MGMg3Rgv5OS8Tww3IQK8o0kBJRvD2oWXMT29VxbgHwCcwqmKEh0tpbRJD88Jg"/><div class="absolute inset-0 bg-black/40 group-hover:bg-black/10 transition-colors duration-500 flex items-center justify-center"><span class="material-symbols-outlined text-white text-5xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-lg" style='font-variation-settings: "FILL" 1;'>play_circle</span></div><div class="absolute bottom-4 left-4 right-4 flex justify-between items-end"><div><p class="font-technical-sm text-technical-sm text-white uppercase tracking-widest mb-1">叙事长片</p><h3 class="font-headline-md text-[24px] text-primary uppercase">寂静之潮</h3></div><div class="border border-surface px-2 py-1 bg-black/50 backdrop-blur-sm"><span class="font-technical-sm text-[10px] text-secondary">RED MONSTRO / ATLAS ORION</span></div></div></div>
+<!-- Grid Item 3 --><div class="relative group overflow-hidden bg-surface-container-high aspect-anamorphic hover-scale-img cursor-pointer reveal border border-transparent hover:border-tertiary/50 hover:shadow-[0_0_30px_rgba(233,193,118,0.15)] transition-all duration-500"><img alt="Urban Noir" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbPvquxq4hS9eB2s4PaluuzqyWH9YsBLRc4H851AM1ZI50L_FY-bqx-7pN_WnMk2roi1BAGM_Nz7ylIRpRrBRBqqojJqfnKCZygEw58JL42SMlygBAHVlnraplMC26jVxzod9kK-DDnhCGWAoXD_gcDS8ZNwolKq1RRuk-OUkB6q4bRwt4Gm5j9zyxdiOi7C1k2znyCHfvNwxp4tcaog1_KT0Qk2dk1_cCH91xB9w54FgyP5-MfWjFw245BSC-82mh0F7EbOswQg"/><div class="absolute inset-0 bg-black/40 group-hover:bg-black/10 transition-colors duration-500 flex items-center justify-center"><span class="material-symbols-outlined text-white text-5xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-lg" style='font-variation-settings: "FILL" 1;'>play_circle</span></div><div class="absolute bottom-4 left-4 right-4 flex justify-between items-end"><div><p class="font-technical-sm text-technical-sm text-white uppercase tracking-widest mb-1">时尚短片</p><h3 class="font-headline-md text-[24px] text-primary uppercase">霓虹荒原</h3></div><div class="border border-surface px-2 py-1 bg-black/50 backdrop-blur-sm"><span class="font-technical-sm text-[10px] text-secondary">ARRI ALEXA MINI / HAWK V-LITE</span></div></div></div>
+<!-- Grid Item 4 --><div class="relative group overflow-hidden bg-surface-container-high aspect-anamorphic hover-scale-img cursor-pointer reveal border border-transparent hover:border-tertiary/50 hover:shadow-[0_0_30px_rgba(233,193,118,0.15)] transition-all duration-500"><img alt="Cinematic Still" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXeBhJQxKqoX7ms7mIz5hTcOeyO3aNDLbOIrF3i8wM8Yi7WVV2zM3dfsNXB1--Uxnc2ZzlvDvsFdChHaHy63b3Jf-NzbKuIrIjH1hp88v-rEoS19VEN8YgINPPcnpOsCcmxEABX1jSgO3T4AB888o_emoK4bJMtJFgfU3S-YD4MMyokx0c5zruM4GtF7Gocsjc7-0PyHgZsburDsFS9n2cc4bxprkgA630C6cOHQTokLv4QRHpU1rLqMXgOK_65U2ztrUDnO88NQ"/><div class="absolute inset-0 bg-black/40 group-hover:bg-black/10 transition-colors duration-500 flex items-center justify-center"><span class="material-symbols-outlined text-white text-5xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-lg" style='font-variation-settings: "FILL" 1;'>play_circle</span></div><div class="absolute bottom-4 left-4 right-4 flex justify-between items-end"><div><p class="font-technical-sm text-technical-sm text-white uppercase tracking-widest mb-1">纪录片</p><h3 class="font-headline-md text-[24px] text-primary uppercase">光影之隙</h3></div><div class="border border-surface px-2 py-1 bg-black/50 backdrop-blur-sm"><span class="font-technical-sm text-[10px] text-secondary">SONY VENICE 2 / ZEISS SUPREME</span></div></div></div>
+<!-- Grid Item 5 --><div class="relative group overflow-hidden bg-surface-container-high aspect-anamorphic hover-scale-img cursor-pointer reveal border border-transparent hover:border-tertiary/50 hover:shadow-[0_0_30px_rgba(233,193,118,0.15)] transition-all duration-500"><img alt="Cinematic Still" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDotdKGivkWfWsGuN4-Dt17HtwlMsFn-ZXN4k-5XqIjcCYIQ03-pSOSYXfXd2LnxnN8VMgEJ95qT3Lh-4quVTSu46U7kznl6FFo9OQgy8edczKP3BtSFgdJ71S1zcCavls9z4Tta_EjZ-WM2VhSFER_qsvcXoFtFzCgk2OMeio5oo0HPxVhe7msRvy87KejlY-tXYAirVVZe2Uu9MGMg3Rgv5OS8Tww3IQK8o0kBJRvD2oWXMT29VxbgHwCcwqmKEh0tpbRJD88Jg"/><div class="absolute inset-0 bg-black/40 group-hover:bg-black/10 transition-colors duration-500 flex items-center justify-center"><span class="material-symbols-outlined text-white text-5xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-lg" style='font-variation-settings: "FILL" 1;'>play_circle</span></div><div class="absolute bottom-4 left-4 right-4 flex justify-between items-end"><div><p class="font-technical-sm text-technical-sm text-white uppercase tracking-widest mb-1">商业广告</p><h3 class="font-headline-md text-[24px] text-primary uppercase">极速瞬间</h3></div><div class="border border-surface px-2 py-1 bg-black/50 backdrop-blur-sm"><span class="font-technical-sm text-[10px] text-secondary">PHANTOM FLEX4K / MASTER PRIMES</span></div></div></div>
+<!-- Grid Item 6 --><div class="relative group overflow-hidden bg-surface-container-high aspect-anamorphic hover-scale-img cursor-pointer reveal border border-transparent hover:border-tertiary/50 hover:shadow-[0_0_30px_rgba(233,193,118,0.15)] transition-all duration-500"><img alt="Cinematic Still" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbPvquxq4hS9eB2s4PaluuzqyWH9YsBLRc4H851AM1ZI50L_FY-bqx-7pN_WnMk2roi1BAGM_Nz7ylIRpRrBRBqqojJqfnKCZygEw58JL42SMlygBAHVlnraplMC26jVxzod9kK-DDnhCGWAoXD_gcDS8ZNwolKq1RRuk-OUkB6q4bRwt4Gm5j9zyxdiOi7C1k2znyCHfvNwxp4tcaog1_KT0Qk2dk1_cCH91xB9w54FgyP5-MfWjFw245BSC-82mh0F7EbOswQg"/><div class="absolute inset-0 bg-black/40 group-hover:bg-black/10 transition-colors duration-500 flex items-center justify-center"><span class="material-symbols-outlined text-white text-5xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-lg" style='font-variation-settings: "FILL" 1;'>play_circle</span></div><div class="absolute bottom-4 left-4 right-4 flex justify-between items-end"><div><p class="font-technical-sm text-technical-sm text-white uppercase tracking-widest mb-1">叙事长片</p><h3 class="font-headline-md text-[24px] text-primary uppercase">深海之蓝</h3></div><div class="border border-surface px-2 py-1 bg-black/50 backdrop-blur-sm"><span class="font-technical-sm text-[10px] text-secondary">RED V-RAPTOR / NAUTICAM HOUSING</span></div></div></div></div>
+</section><section class="py-[128px] bg-surface-container-lowest border-t border-surface" id="awards"><div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop"><h2 class="font-headline-md text-headline-md text-primary uppercase mb-12 flex items-center gap-4 reveal"><span class="material-symbols-outlined text-tertiary text-sm">military_tech</span>工作经历</h2><div class="grid grid-cols-1 md:grid-cols-2 gap-12"><div class="space-y-8 reveal"><div class="relative pl-8 border-l border-surface"><div class="absolute left-[-5px] top-0 w-2 h-2 bg-tertiary rounded-full"></div><p class="font-technical-sm text-tertiary mb-1">2020 - 至今</p><h4 class="text-primary font-body-lg">自由职业摄影指导</h4><p class="text-secondary text-body-md">服务于高端商业广告与独立长片项目。</p></div><div class="relative pl-8 border-l border-surface"><div class="absolute left-[-5px] top-0 w-2 h-2 bg-surface rounded-full border border-tertiary"></div><p class="font-technical-sm text-tertiary mb-1">2016 - 2020</p><h4 class="text-primary font-body-lg">极光影业 - 资深摄影师</h4><p class="text-secondary text-body-md">负责多部院线电影的B机位拍摄及灯光指导。</p></div></div><div class="space-y-6 reveal"><div class="flex items-start gap-4"><span class="material-symbols-outlined text-tertiary">workspace_premium</span><div><h4 class="text-primary font-body-lg">最佳摄影奖</h4><p class="text-secondary text-body-md">2023 独立电影节 - 《寂静之潮》</p></div></div><div class="flex items-start gap-4"><span class="material-symbols-outlined text-tertiary">workspace_premium</span><div><h4 class="text-primary font-body-lg">年度商业短片金奖</h4><p class="text-secondary text-body-md">2022 广告创意大赏 - 《夜想回声》</p></div></div></div></div></div></section><section class="py-[128px] bg-background border-t border-surface" id="skills"><div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop"><h2 class="font-headline-md text-headline-md text-primary uppercase mb-12 flex items-center gap-4 reveal"><span class="material-symbols-outlined text-tertiary text-sm">architecture</span>专业技能</h2><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 reveal"><div class="space-y-4"><div class="flex items-center gap-3 text-tertiary"><span class="material-symbols-outlined">videocam</span><h4 class="font-technical-sm uppercase tracking-widest">摄影机系统</h4></div><ul class="space-y-2 text-on-surface-variant font-body-md"><li class="">ARRI Alexa 35 / Mini LF</li><li class="">RED V-Raptor / Monstro</li><li class="">Sony Venice 2</li><li class="">Panavision Millennium DXL2</li></ul></div><div class="space-y-4"><div class="flex items-center gap-3 text-tertiary"><span class="material-symbols-outlined">lightbulb</span><h4 class="font-technical-sm uppercase tracking-widest">灯光与机械</h4></div><ul class="space-y-2 text-on-surface-variant font-body-md"><li class="">电影感布光设计</li><li class="">负向补光 (Negative Fill)</li><li class="">高调/低调布光控制</li><li class="">大型片场灯光统筹</li></ul></div><div class="space-y-4"><div class="flex items-center gap-3 text-tertiary"><span class="material-symbols-outlined">palette</span><h4 class="font-technical-sm uppercase tracking-widest">后期制作</h4></div><ul class="space-y-2 text-on-surface-variant font-body-md"><li class="">DaVinci Resolve 调色</li><li class="">ACES 色彩管理工作流</li><li class="">DIT 现场色彩管理</li><li class="">胶片模拟与颗粒处理</li></ul></div><div class="space-y-4"><div class="flex items-center gap-3 text-tertiary"><span class="material-symbols-outlined">settings_input_component</span><h4 class="font-technical-sm uppercase tracking-widest">技术规格</h4></div><ul class="space-y-2 text-on-surface-variant font-body-md"><li class="">变形宽银幕 (Anamorphic)</li><li class="">高速摄影 (High Speed)</li><li class="">水下摄影 (Underwater)</li><li class="">虚拟制片 (ICVFX)</li></ul></div></div></div></section>
+</main>
+<!-- Footer Shared Component -->
+<footer class="bg-surface-container-lowest w-full py-16 bg-surface-container-lowest" id="contact">
+<div class="flex flex-col items-center gap-8 px-margin-desktop w-full max-w-container-max mx-auto reveal">
+<div class="font-headline-md text-headline-md text-primary">导演 / 摄影指导</div>
+<div class="mb-8"><a class="flex items-center gap-2 border border-tertiary text-tertiary px-6 py-3 font-technical-sm text-technical-sm uppercase tracking-widest hover:bg-tertiary hover:text-on-tertiary transition-all duration-300" href="mailto:hello@example.com?subject=Portfolio%20Contact"><span class="material-symbols-outlined text-sm">mail</span>联系</a></div><div class="flex flex-wrap justify-center gap-6">
+<a class="font-technical-sm text-technical-sm text-on-surface-variant hover:text-primary transition-colors uppercase tracking-widest" href="https://www.imdb.com/find/?q=%E5%88%98%E5%AE%B6%E6%88%90&s=nm" rel="noopener noreferrer" target="_blank">IMDb</a>
+<a class="font-technical-sm text-technical-sm text-on-surface-variant hover:text-primary transition-colors uppercase tracking-widest" href="https://vimeo.com/search?q=%E5%88%98%E5%AE%B6%E6%88%90" rel="noopener noreferrer" target="_blank">Vimeo</a>
+<a class="font-technical-sm text-technical-sm text-on-surface-variant hover:text-primary transition-colors uppercase tracking-widest" href="https://www.instagram.com/" rel="noopener noreferrer" target="_blank">Instagram</a>
+</div>
+<div class="font-technical-sm text-technical-sm text-on-surface-variant mt-8 tracking-widest text-center">
+                © 2024 摄影版权所有。保留所有权利。
+            </div>
+</div>
+</footer>
+<script src="app.js?v=5"></script>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+            
+            if (!prefersReducedMotion.matches) {
+                // Interactive Cursor Ambient Light
+                const ambientLight = document.createElement('div');
+                ambientLight.className = 'ambient-light';
+                document.body.appendChild(ambientLight);
+
+                document.addEventListener('mousemove', (e) => {
+                    ambientLight.style.setProperty('--mouse-x', `${e.clientX}px`);
+                    ambientLight.style.setProperty('--mouse-y', `${e.clientY}px`);
+                });
+
+                // IntersectionObserver for Entrance Animations
+                const observerOptions = {
+                    root: null,
+                    rootMargin: '0px',
+                    threshold: 0.15
+                };
+
+                const observer = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('active');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, observerOptions);
+
+                document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+                // Parallax Effects
+                const heroImg = document.querySelector('.hero-bg-img');
+                const btsImgs = document.querySelectorAll('.bts-parallax');
+
+                window.addEventListener('scroll', () => {
+                    const scrollPos = window.scrollY;
+                    
+                    // Hero Parallax
+                    if (heroImg && scrollPos < window.innerHeight) {
+                        heroImg.style.transform = `translateY(${scrollPos * 0.3}px)`;
+                    }
+
+                    // BTS Parallax
+                    btsImgs.forEach(img => {
+                        const rect = img.closest('.group').getBoundingClientRect();
+                        if (rect.top < window.innerHeight && rect.bottom > 0) {
+                            // Calculate subtle offset based on position in viewport
+                            const offset = (window.innerHeight - rect.top) * 0.05;
+                            // Combine with scale to prevent edge visibility
+                            img.style.transform = `translateY(${offset - 20}px) scale(1.1)`;
+                        }
+                    });
+                }, { passive: true });
+            }
+        });
+    </script>
+</body></html>
+

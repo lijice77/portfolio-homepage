@@ -357,28 +357,17 @@
                 margin-top: 28px;
             }
             main h1.font-display-lg {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
                 max-width: calc(100vw - 56px);
-                min-height: 1.9em;
-                font-size: clamp(54px, 18vw, 76px) !important;
+                font-size: clamp(48px, 14.5vw, 64px) !important;
                 line-height: 0.94 !important;
                 white-space: normal;
-                color: transparent;
+                color: #e3e2e7;
                 overflow: visible;
             }
             main h1.font-display-lg::before,
             main h1.font-display-lg::after {
-                display: block;
-                color: #e3e2e7;
-                text-shadow: 0 0 20px rgba(233, 193, 118, 0.1), 0 14px 30px rgba(0, 0, 0, 0.55);
-            }
-            main h1.font-display-lg::before {
-                content: attr(data-mobile-title-a);
-            }
-            main h1.font-display-lg::after {
-                content: attr(data-mobile-title-b);
+                content: none;
+                display: none;
             }
             nav .font-headline-md {
                 font-size: clamp(15px, 4.4vw, 19px);

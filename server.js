@@ -161,17 +161,57 @@ function serveStatic(req, res) {
     res.end("Forbidden");
     return;
   }
-  fs.readFile(filePath, (err, data) => {
-    if (err) {
+  fs.stat(filePath, (err, stat) => {
+    if (err || !stat.isFile()) {
       res.writeHead(404, { "Content-Type": "text/plain; charset=utf-8" });
       res.end("Not found");
       return;
     }
+
+    const ext = path.extname(filePath).toLowerCase();
+    const contentType = mimeTypes[ext] || "application/octet-stream";
+    const isMedia = [".mp4", ".mov", ".webm", ".ogv", ".ogg"].includes(ext);
+    const range = req.headers.range;
+
+    if (isMedia && range) {
+      const match = range.match(/bytes=(\d*)-(\d*)/);
+      if (!match) {
+        res.writeHead(416, { "Content-Range": `bytes */${stat.size}` });
+        res.end();
+        return;
+      }
+
+      const start = match[1] ? Number(match[1]) : 0;
+      const end = match[2] ? Number(match[2]) : stat.size - 1;
+      if (Number.isNaN(start) || Number.isNaN(end) || start > end || start >= stat.size) {
+        res.writeHead(416, { "Content-Range": `bytes */${stat.size}` });
+        res.end();
+        return;
+      }
+
+      const finalEnd = Math.min(end, stat.size - 1);
+      res.writeHead(206, {
+        "Content-Type": contentType,
+        "Content-Length": finalEnd - start + 1,
+        "Content-Range": `bytes ${start}-${finalEnd}/${stat.size}`,
+        "Accept-Ranges": "bytes",
+        "Cache-Control": "no-store"
+      });
+      fs.createReadStream(filePath, { start, end: finalEnd }).pipe(res);
+      return;
+    }
+
     res.writeHead(200, {
-      "Content-Type": mimeTypes[path.extname(filePath).toLowerCase()] || "application/octet-stream",
+      "Content-Type": contentType,
+      "Content-Length": stat.size,
+      ...(isMedia ? { "Accept-Ranges": "bytes" } : {}),
       "Cache-Control": "no-store"
     });
-    res.end(data);
+    if (req.method === "HEAD") {
+      res.end();
+      return;
+    }
+    fs.createReadStream(filePath).pipe(res);
   });
 }
 

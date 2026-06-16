@@ -102,12 +102,15 @@
 
     video.pause();
     video.removeAttribute("src");
+    video.removeAttribute("data-needs-manual-play");
     video.load();
     if (project.videoUrl) {
       video.src = resolveAssetUrl(project.videoUrl);
       video.poster = resolveAssetUrl(project.cover) || "";
       video.classList.remove("hidden");
       empty.classList.add("hidden");
+      empty.classList.remove("grid");
+      video.muted = false;
     } else {
       video.classList.add("hidden");
       empty.classList.remove("hidden");
@@ -116,6 +119,22 @@
 
     modal.classList.remove("hidden");
     document.body.style.overflow = "hidden";
+    if (project.videoUrl) {
+      video.currentTime = 0;
+      video.load();
+      const playPromise = video.play();
+      if (playPromise && typeof playPromise.catch === "function") {
+        playPromise.catch(() => {
+          video.muted = true;
+          const mutedPlayPromise = video.play();
+          if (mutedPlayPromise && typeof mutedPlayPromise.catch === "function") {
+            mutedPlayPromise.catch(() => {
+              video.setAttribute("data-needs-manual-play", "true");
+            });
+          }
+        });
+      }
+    }
   }
 
   function closePlayer() {

@@ -62,7 +62,7 @@
           </button>
         </div>
         <div class="relative overflow-hidden border border-surface bg-black shadow-2xl">
-          <video id="player-video" class="hidden aspect-video w-full bg-black" controls playsinline preload="metadata"></video>
+          <video id="player-video" class="hidden aspect-video w-full bg-black" controls playsinline preload="auto"></video>
           <div id="player-empty" class="hidden aspect-video w-full place-items-center bg-surface-container-lowest p-8 text-center">
             <div>
               <span class="material-symbols-outlined mb-4 text-5xl text-tertiary">movie</span>
@@ -110,7 +110,8 @@
       video.classList.remove("hidden");
       empty.classList.add("hidden");
       empty.classList.remove("grid");
-      video.muted = false;
+      video.muted = true;
+      video.preload = "auto";
     } else {
       video.classList.add("hidden");
       empty.classList.remove("hidden");

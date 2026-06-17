@@ -26,7 +26,8 @@
       "camera": "",
       "cover": "/assets/uploads/1781444149056-2026-06-06-234237_1.2.1.webp",
       "videoUrl": "/assets/uploads/benteng-car-club-07-web-fast.mp4",
-      "featured": true
+      "featured": true,
+      "mobileVideoUrl": "/assets/uploads/benteng-car-club-07-web-mobile.mp4"
     },
     {
       "id": "project-1781444105449",
@@ -36,7 +37,8 @@
       "camera": "",
       "cover": "/assets/uploads/1781444109162-2026-06-06-234237_1.3.1.webp",
       "videoUrl": "/assets/uploads/1781444113270-kn-fast.mp4",
-      "featured": true
+      "featured": true,
+      "mobileVideoUrl": "/assets/uploads/1781444113270-kn-mobile.mp4"
     },
     {
       "id": "project-1781443773933",
@@ -46,7 +48,8 @@
       "camera": "",
       "cover": "/assets/uploads/1781443786796-2026-06-06-234237_1.8.1.webp",
       "videoUrl": "/assets/uploads/1781443794709-image-web-fast.mp4",
-      "featured": true
+      "featured": true,
+      "mobileVideoUrl": "/assets/uploads/1781443794709-image-web-mobile.mp4"
     },
     {
       "id": "night-echo",
@@ -56,7 +59,8 @@
       "camera": "",
       "cover": "/assets/uploads/1781438554850-2026-06-06-234237_1.6.1.webp",
       "featured": true,
-      "videoUrl": "/assets/uploads/1781438550216-image-fast.mp4"
+      "videoUrl": "/assets/uploads/1781438550216-image-fast.mp4",
+      "mobileVideoUrl": "/assets/uploads/1781438550216-image-mobile.mp4"
     },
     {
       "id": "tiandong-has-treasures",
@@ -66,7 +70,8 @@
       "camera": "",
       "cover": "/assets/uploads/1781443239574-2026-06-06-234237_1.5.1.webp",
       "featured": true,
-      "videoUrl": "/assets/uploads/1781443276135-kn-h264-fast.mp4"
+      "videoUrl": "/assets/uploads/1781443276135-kn-h264-fast.mp4",
+      "mobileVideoUrl": "/assets/uploads/1781443276135-kn-h264-mobile.mp4"
     },
     {
       "id": "b70-launch-live",
@@ -76,7 +81,8 @@
       "camera": "",
       "cover": "/assets/uploads/1781443708036-2026-06-06-234237_1.1.1.webp",
       "featured": true,
-      "videoUrl": "/assets/uploads/1781443714388-image-web-fast.mp4"
+      "videoUrl": "/assets/uploads/1781443714388-image-web-fast.mp4",
+      "mobileVideoUrl": "/assets/uploads/1781443714388-image-web-mobile.mp4"
     }
   ],
   "bts": {

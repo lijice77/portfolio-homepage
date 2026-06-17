@@ -30,6 +30,14 @@
     return `${base}${url}`;
   }
 
+  function pickVideoUrl(project) {
+    const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+    const isSmallScreen = window.matchMedia("(max-width: 768px)").matches;
+    const isSlowConnection = !!connection && (connection.saveData || /(^|-)2g$|3g/i.test(connection.effectiveType || ""));
+    if ((isSmallScreen || isSlowConnection) && project.mobileVideoUrl) return project.mobileVideoUrl;
+    return project.videoUrl;
+  }
+
   function renderHeroTitle(value) {
     const heading = document.querySelector("h1");
     if (!heading || !value) return;
@@ -104,8 +112,9 @@
     video.removeAttribute("src");
     video.removeAttribute("data-needs-manual-play");
     video.load();
-    if (project.videoUrl) {
-      video.src = resolveAssetUrl(project.videoUrl);
+    const selectedVideoUrl = pickVideoUrl(project);
+    if (selectedVideoUrl) {
+      video.src = resolveAssetUrl(selectedVideoUrl);
       video.poster = resolveAssetUrl(project.cover) || "";
       video.classList.remove("hidden");
       empty.classList.add("hidden");
@@ -120,7 +129,7 @@
 
     modal.classList.remove("hidden");
     document.body.style.overflow = "hidden";
-    if (project.videoUrl) {
+    if (selectedVideoUrl) {
       video.currentTime = 0;
       video.load();
       const playPromise = video.play();

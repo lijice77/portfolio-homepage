@@ -157,7 +157,7 @@
     const description = escapeHtml(project.description || "");
     return `
       <article class="${cardClasses}" data-project-index="${index}" data-project-id="${escapeHtml(project.id || "")}" tabindex="0" role="button" aria-label="播放 ${title}">
-        <img alt="${title}" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" src="${escapeHtml(cover)}"/>
+        <img alt="${title}" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" src="${escapeHtml(cover)}" loading="lazy" decoding="async"/>
         <div class="absolute inset-0 flex items-center justify-center bg-black/40 transition-colors duration-500 group-hover:bg-black/10">
           <span class="material-symbols-outlined text-5xl text-white opacity-0 drop-shadow-lg transition-opacity duration-300 group-hover:opacity-100" style='font-variation-settings: "FILL" 1;'>${project.videoUrl ? "play_circle" : "movie"}</span>
         </div>
@@ -178,7 +178,7 @@
     return `
       <div class="group relative">
         <div class="aspect-[3/4] overflow-hidden border border-white/10 shadow-2xl transition-all duration-500 group-hover:border-tertiary">
-          <img alt="${escapeHtml(item.label || "拍摄花絮")}" class="bts-parallax h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" src="${escapeHtml(resolveAssetUrl(item.image) || "")}"/>
+          <img alt="${escapeHtml(item.label || "拍摄花絮")}" class="bts-parallax h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" src="${escapeHtml(resolveAssetUrl(item.image) || "")}" loading="lazy" decoding="async"/>
           <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
             <p class="font-technical-sm text-[10px] uppercase tracking-widest text-tertiary">${escapeHtml(item.label || "")}</p>
           </div>
@@ -237,7 +237,7 @@
               ${brands.map(brand => `
                 <article class="flex min-h-[132px] flex-col items-center justify-center gap-4 bg-background/80 p-5 text-center transition-colors duration-300 hover:bg-surface-container-lowest">
                   <div class="relative flex h-16 w-full max-w-[150px] items-center justify-center px-2 py-2 text-xs font-bold text-tertiary">
-                    ${brand.logo ? `<img class="relative z-10 max-h-full max-w-full object-contain" alt="${escapeHtml(brand.name || "品牌")} logo" src="${escapeHtml(resolveAssetUrl(brand.logo))}" onload="this.nextElementSibling.style.display='none';" onerror="this.style.display='none';">` : ""}
+                    ${brand.logo ? `<img class="relative z-10 max-h-full max-w-full object-contain" alt="${escapeHtml(brand.name || "品牌")} logo" src="${escapeHtml(resolveAssetUrl(brand.logo))}" loading="lazy" decoding="async" onload="this.nextElementSibling.style.display='none';" onerror="this.style.display='none';">` : ""}
                     <span class="brand-fallback flex items-center justify-center text-center leading-4">${escapeHtml(brand.shortName || (brand.name || "").slice(0, 2))}</span>
                   </div>
                   <p class="font-technical-sm text-[10px] leading-4 text-on-surface-variant">${escapeHtml(brand.name || "")}</p>

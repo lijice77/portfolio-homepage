@@ -24,7 +24,7 @@
       "category": "商业广告",
       "description": "",
       "camera": "",
-      "cover": "/assets/uploads/1781444149056-2026-06-06-234237_1.2.1.jpg",
+      "cover": "/assets/uploads/1781444149056-2026-06-06-234237_1.2.1.webp",
       "videoUrl": "/assets/uploads/benteng-car-club-07-web.mp4",
       "featured": true
     },
@@ -34,7 +34,7 @@
       "category": "商业广告",
       "description": "",
       "camera": "",
-      "cover": "/assets/uploads/1781444109162-2026-06-06-234237_1.3.1.jpg",
+      "cover": "/assets/uploads/1781444109162-2026-06-06-234237_1.3.1.webp",
       "videoUrl": "/assets/uploads/1781444113270-kn.mp4",
       "featured": true
     },
@@ -44,7 +44,7 @@
       "category": "公益广告",
       "description": "",
       "camera": "",
-      "cover": "/assets/uploads/1781443786796-2026-06-06-234237_1.8.1.jpg",
+      "cover": "/assets/uploads/1781443786796-2026-06-06-234237_1.8.1.webp",
       "videoUrl": "/assets/uploads/1781443794709-image-web.mp4",
       "featured": true
     },
@@ -54,7 +54,7 @@
       "category": "商业广告",
       "description": "",
       "camera": "",
-      "cover": "/assets/uploads/1781438554850-2026-06-06-234237_1.6.1.jpg",
+      "cover": "/assets/uploads/1781438554850-2026-06-06-234237_1.6.1.webp",
       "featured": true,
       "videoUrl": "/assets/uploads/1781438550216-image.mp4"
     },
@@ -64,7 +64,7 @@
       "category": "商业广告",
       "description": "",
       "camera": "",
-      "cover": "/assets/uploads/1781443239574-2026-06-06-234237_1.5.1.jpg",
+      "cover": "/assets/uploads/1781443239574-2026-06-06-234237_1.5.1.webp",
       "featured": true,
       "videoUrl": "/assets/uploads/1781443276135-kn-h264.mp4"
     },
@@ -74,7 +74,7 @@
       "category": "商业广告",
       "description": "",
       "camera": "",
-      "cover": "/assets/uploads/1781443708036-2026-06-06-234237_1.1.1.jpg",
+      "cover": "/assets/uploads/1781443708036-2026-06-06-234237_1.1.1.webp",
       "featured": true,
       "videoUrl": "/assets/uploads/1781443714388-image-web.mp4"
     }
@@ -84,39 +84,39 @@
     "items": [
       {
         "label": "新花絮",
-        "image": "/assets/uploads/1781444619792-7bef782706a6aac6b6bcb7fe626f9be4.jpg"
+        "image": "/assets/uploads/1781444619792-7bef782706a6aac6b6bcb7fe626f9be4.webp"
       },
       {
         "label": "新花絮",
-        "image": "/assets/uploads/1781444608480-a4a0086d3b31d08448b312161d576e21.jpg"
+        "image": "/assets/uploads/1781444608480-a4a0086d3b31d08448b312161d576e21.webp"
       },
       {
         "label": "新花絮",
-        "image": "/assets/uploads/1781444583996-3191497dfee430847a8d479f39712be6.jpg"
+        "image": "/assets/uploads/1781444583996-3191497dfee430847a8d479f39712be6.webp"
       },
       {
         "label": "新花絮",
-        "image": "/assets/uploads/1781444443682-0aa3de7f0a1caf2fac8ccdffb34866ea.jpg"
+        "image": "/assets/uploads/1781444443682-0aa3de7f0a1caf2fac8ccdffb34866ea.webp"
       },
       {
         "label": "新花絮",
-        "image": "/assets/uploads/1781444431808-8cd627f0d7adef10f2811852a3ef1c3b.jpg"
+        "image": "/assets/uploads/1781444431808-8cd627f0d7adef10f2811852a3ef1c3b.webp"
       },
       {
         "label": "新花絮",
-        "image": "/assets/uploads/1781444415574-6cabf55549effaa99c39bc67fa3ac40a.jpg"
+        "image": "/assets/uploads/1781444415574-6cabf55549effaa99c39bc67fa3ac40a.webp"
       },
       {
         "label": "Portrait / Lead",
-        "image": "/assets/uploads/1781444356287-414a573b0ec044d4b7fcf8784d5d3bd7.jpg"
+        "image": "/assets/uploads/1781444356287-414a573b0ec044d4b7fcf8784d5d3bd7.webp"
       },
       {
         "label": "On Set / Lighting",
-        "image": "/assets/uploads/1781444371769-a0e5c8f7bc5ef72d624511294d75abf2.jpg"
+        "image": "/assets/uploads/1781444371769-a0e5c8f7bc5ef72d624511294d75abf2.webp"
       },
       {
         "label": "Camera / Operation",
-        "image": "/assets/uploads/1781444382850-d8f77715433586c08c72888f9faa18cd.jpg"
+        "image": "/assets/uploads/1781444382850-d8f77715433586c08c72888f9faa18cd.webp"
       }
     ]
   },
